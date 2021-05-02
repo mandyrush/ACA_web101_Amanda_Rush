@@ -5,6 +5,13 @@ Purple: #413c69
 Light Purple: #847db5
 */
 
+
+/* 
+Fonts
+
+font-family: 'Roboto', sans-serif; 
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -18,17 +25,20 @@ body {
     margin: 0;
     background-color: #ccc;
     color: #fff;
+    font-family: 'Roboto', sans-serif; 
 }
 
 h1 {
     font-size: 4rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 h2 {
     text-transform: uppercase;
     margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 ul {
