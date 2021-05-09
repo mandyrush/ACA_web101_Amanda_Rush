@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.styles.css">
+    <script src="./contact.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e8a85165cb.js" crossorigin="anonymous"></script>
+    <title>Contact Me</title>
+</head>
+<body>
+    <div class="contact-container">
+        <header>
+            <h1>Amanda Rush</h1>
+            <nav>
+                <a href="#">Portfolio</a>
+                <a href="#">About</a>
+                <a href="#">Email</a>
+            </nav>
+        </header>
+        <main>
+            <form id="contact-form" action="result.html" method="POST">
+                <h2>Contact Me</h2>
+                <div class="form-group">
+                    <label for="name">Your Name <span class="required-marker">*</span></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email <span class="required-marker">*</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" minlength="20" maxlength="500"></textarea>
+                </div>
+                
+                <div class="form-group-checkbox">
+                    <p>How did you hear about me?</p>
+                    <div>
+                        <input type="checkbox" name="classmate" id="classmate">
+                        <label for="classmate">Classmate</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="resume-submission" id="resume-submission">
+                        <label for="resume-submission">Resume Submission</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="linkedin" id="linkedin">
+                        <label for="linkedin">Linkedin</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="coding-academy-rec" id="coding-academy-rec">
+                        <label for="coding-academy-rec">Coding Academy Rec</label>
+                    </div>
+                </div>
+            
+                <div class="form-group-radio">
+                    <p>Would you like to be contacted back?</p>
+                    <div>
+                        <input type="radio" name="contact-me" id="contact-yes">
+                        <label for="contact-yes">Yes</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="contact-me" id="contact-no">
+                        <label for="contact-no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthday">Your Birthday</label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+
+                <button class="btn-primary" type="submit">Send</button>
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+            </nav>
+
+            <ul class="portfolio-links">
+                <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-github"></i> Github</a>
+                </li>
+            </ul>
+
+            <a href="#"><i class="fas fa-envelope"></i> Email</a>
+        </footer>
+    </div>
+</body>
+</html>
