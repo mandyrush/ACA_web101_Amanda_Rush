@@ -1,0 +1,197 @@
+/**********
+Colors
+
+Offwhite: #f6f5f5
+Light Gray: #d3e0ea
+Teal: #00b1dd
+Blue: #133f5a
+**********/
+
+/**********
+Fonts
+
+font-family: 'El Messiri', sans-serif;
+font-family: 'Poppins', sans-serif;
+**********/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-width: 1280px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #133f5a;
+}
+
+h1 {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/**********
+Links
+**********/
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #d3e0ea;
+}
+
+/**********
+Lists
+**********/
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/**********
+Header
+**********/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./mountain_bkgd.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+
+/**********
+Sections
+**********/
+main section {
+    padding: 3rem 1rem;
+    position: relative;
+}
+
+main section:nth-of-type(even) {
+    background-color: #f6f5f5;
+}
+
+main section:nth-of-type(odd) {
+    background-color: #d3e0ea;
+}
+
+main section:nth-of-type(odd):after,
+main section:nth-of-type(even):after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    position: absolute;
+    left: 50%;
+    transform: rotate(45deg);
+    bottom: -10px;
+    z-index: 100;
+}
+
+section .lead {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+section .img-border {
+    border: 5px solid #00b1dd;
+    margin: 1rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+section .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/**********
+Footer
+**********/
+footer {
+    background-color: #133f5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.footer-nav {
+    list-style: none;
+}
+
+/**********
+Media Queries
+**********/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    header {
+        background-attachment: fixed;
+        height: 70vh;
+    }
+
+    main section {
+        padding: 3rem;
+    }
+
+    main section:nth-child(1) {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    main section:nth-child(1) p {
+        grid-column: 2/3;
+    }
+
+    main section:nth-child(2),
+    main section:nth-child(3) {
+        display: grid;
+        grid-column-gap: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-nav {
+        display: flex;
+    }
+
+    .footer-nav li:not(:last-child):after {
+        content: '\2022';
+        color: #fff;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        height: 75vh;
+    }
+}
